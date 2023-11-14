@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		82251A622B031B0B00AE9AB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82251A612B031B0B00AE9AB4 /* AppDelegate.swift */; };
-		82251A642B031B0B00AE9AB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82251A632B031B0B00AE9AB4 /* SceneDelegate.swift */; };
 		82251A662B031B0B00AE9AB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82251A652B031B0B00AE9AB4 /* ViewController.swift */; };
 		82251A692B031B0B00AE9AB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82251A672B031B0B00AE9AB4 /* Main.storyboard */; };
 		82251A6B2B031B1400AE9AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82251A6A2B031B1400AE9AB4 /* Assets.xcassets */; };
@@ -18,12 +17,12 @@
 /* Begin PBXFileReference section */
 		82251A5E2B031B0B00AE9AB4 /* Read WIFI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Read WIFI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82251A612B031B0B00AE9AB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82251A632B031B0B00AE9AB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		82251A652B031B0B00AE9AB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		82251A682B031B0B00AE9AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82251A6A2B031B1400AE9AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82251A6D2B031B1400AE9AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82251A6F2B031B1400AE9AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82251A752B031BB100AE9AB4 /* Read WIFI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Read WIFI.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +55,8 @@
 		82251A602B031B0B00AE9AB4 /* Read WIFI */ = {
 			isa = PBXGroup;
 			children = (
+				82251A752B031BB100AE9AB4 /* Read WIFI.entitlements */,
 				82251A612B031B0B00AE9AB4 /* AppDelegate.swift */,
-				82251A632B031B0B00AE9AB4 /* SceneDelegate.swift */,
 				82251A652B031B0B00AE9AB4 /* ViewController.swift */,
 				82251A672B031B0B00AE9AB4 /* Main.storyboard */,
 				82251A6A2B031B1400AE9AB4 /* Assets.xcassets */,
@@ -140,7 +139,6 @@
 			files = (
 				82251A662B031B0B00AE9AB4 /* ViewController.swift in Sources */,
 				82251A622B031B0B00AE9AB4 /* AppDelegate.swift in Sources */,
-				82251A642B031B0B00AE9AB4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +283,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Read WIFI/Read WIFI.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N8DFP3VMU7;
@@ -295,6 +295,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +303,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "appwork.Read-WIFI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,6 +315,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Read WIFI/Read WIFI.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N8DFP3VMU7;
@@ -323,6 +327,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +335,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "appwork.Read-WIFI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
